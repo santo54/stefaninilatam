@@ -1,0 +1,92 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "01 cadastro de usuarios",
+    "line": 1,
+    "id": "01-cadastro-de-usuarios",
+    "tags": [],
+    "uri": "01_cadastro-de-usuarios.feature",
+    "elements": [
+      {
+        "id": "01-cadastro-de-usuarios;elementos-de-login-del-sitio",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Elementos de login del sitio",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "El usuario abre el sitio cadastro de usuarios",
+            "result": {
+              "status": "passed",
+              "duration": 1639000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "El usuario entra al sitio",
+            "result": {
+              "status": "passed",
+              "duration": 9000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "El usuario deberia ver el elemento, campo Nome",
+            "result": {
+              "status": "passed",
+              "duration": 9000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "El usuario deberia ver el elemento, campo E-mail",
+            "result": {
+              "status": "passed",
+              "duration": 8000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "El usuario deberia ver el elemento, campo Senha",
+            "result": {
+              "status": "passed",
+              "duration": 9000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "El usuario deberia ver el elemento, boton Cadastrar",
+            "result": {
+              "status": "passed",
+              "duration": 8000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "El usuario no deberia la tabla de usuarios",
+            "result": {
+              "status": "passed",
+              "duration": 6000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,472 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "02 cadastro de usuarios",
+    "line": 1,
+    "id": "02-cadastro-de-usuarios",
+    "tags": [],
+    "uri": "02_cadastro-de-usuarios.feature",
+    "elements": [
+      {
+        "id": "02-cadastro-de-usuarios;si-el-campo-nome-esta-vacio",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Si el campo Nome esta vacio",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "El usuario abre el sitio cadastro de usuarios",
+            "result": {
+              "status": "passed",
+              "duration": 958000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "El usuario ingresa E-mail \"test@test.com\"",
+            "result": {
+              "status": "passed",
+              "duration": 301000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "El usuario ingresa una Senha \"12345678\"",
+            "result": {
+              "status": "passed",
+              "duration": 233000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "El usuario hace click en el boton Cadastrar",
+            "result": {
+              "status": "passed",
+              "duration": 84000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "El usuario deber ver el error \"O campo Nome é obrigatório\"",
+            "result": {
+              "status": "passed",
+              "duration": 9000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "02-cadastro-de-usuarios;si-el-campo-e-mail-esta-vacio",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Si el campo E-mail esta vacio",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "El usuario abre el sitio cadastro de usuarios",
+            "result": {
+              "status": "passed",
+              "duration": 292000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "El usuario ingresa Nome \"Juan Perez\"",
+            "result": {
+              "status": "passed",
+              "duration": 265000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "El usuario ingresa una Senha \"12345678\"",
+            "result": {
+              "status": "passed",
+              "duration": 234000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "El usuario hace click en el boton Cadastrar",
+            "result": {
+              "status": "passed",
+              "duration": 83000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "El usuario deber ver el error \"O campo E-mail é obrigatório\"",
+            "result": {
+              "status": "passed",
+              "duration": 6000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "02-cadastro-de-usuarios;si-el-campo-senha-esta-vacio",
+        "keyword": "Scenario",
+        "line": 18,
+        "name": "Si el campo Senha esta vacio",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "El usuario abre el sitio cadastro de usuarios",
+            "result": {
+              "status": "passed",
+              "duration": 285000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "El usuario ingresa Nome \"Juan Perez\"",
+            "result": {
+              "status": "passed",
+              "duration": 260000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "El usuario ingresa E-mail \"test@test.com\"",
+            "result": {
+              "status": "passed",
+              "duration": 296000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "El usuario hace click en el boton Cadastrar",
+            "result": {
+              "status": "passed",
+              "duration": 86000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "El usuario deber ver el error \"O campo Senha é obrigatório\"",
+            "result": {
+              "status": "passed",
+              "duration": 6000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "02-cadastro-de-usuarios;sin-haber-completado-ninguno-de-los-campos-del-formulario",
+        "keyword": "Scenario",
+        "line": 24,
+        "name": "Sin haber completado ninguno de los campos del formulario",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "El usuario abre el sitio cadastro de usuarios",
+            "result": {
+              "status": "passed",
+              "duration": 320000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 25,
+            "name": "El usuario hace click en el boton Cadastrar",
+            "result": {
+              "status": "passed",
+              "duration": 90000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "El usuario deber ver el error \"O campo Nome é obrigatório\"",
+            "result": {
+              "status": "passed",
+              "duration": 9000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 27,
+            "name": "El usuario deber ver el error \"O campo E-mail é obrigatório\"",
+            "result": {
+              "status": "passed",
+              "duration": 5000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 28,
+            "name": "El usuario deber ver el error \"O campo Senha é obrigatório\"",
+            "result": {
+              "status": "passed",
+              "duration": 7000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 29,
+            "name": "El usuario no deberia ver la tabla de usuarios",
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "02-cadastro-de-usuarios;si-el-campo-nombre-esta-incompleto",
+        "keyword": "Scenario",
+        "line": 32,
+        "name": "Si el campo Nombre esta incompleto",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "El usuario abre el sitio cadastro de usuarios",
+            "result": {
+              "status": "passed",
+              "duration": 278000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 33,
+            "name": "El usuario ingresa Nome \"Juan\"",
+            "result": {
+              "status": "passed",
+              "duration": 183000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 34,
+            "name": "El usuario ingresa E-mail \"test@test.com\"",
+            "result": {
+              "status": "passed",
+              "duration": 288000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 35,
+            "name": "El usuario ingresa una Senha \"12345678\"",
+            "result": {
+              "status": "passed",
+              "duration": 227000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 36,
+            "name": "El usuario hace click en el boton Cadastrar",
+            "result": {
+              "status": "passed",
+              "duration": 82000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 37,
+            "name": "El usuario deber ver el error \"Por favor, insira um nome completo\"",
+            "result": {
+              "status": "passed",
+              "duration": 5000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "02-cadastro-de-usuarios;si-el-campo-e-mail-esta-incorrecto",
+        "keyword": "Scenario",
+        "line": 39,
+        "name": "Si el campo E-mail esta incorrecto",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "El usuario abre el sitio cadastro de usuarios",
+            "result": {
+              "status": "passed",
+              "duration": 293000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 40,
+            "name": "El usuario ingresa Nome \"Juan Perez\"",
+            "result": {
+              "status": "passed",
+              "duration": 270000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 41,
+            "name": "El usuario ingresa E-mail \"testtest.com\"",
+            "result": {
+              "status": "passed",
+              "duration": 276000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 42,
+            "name": "El usuario ingresa una Senha \"12345678\"",
+            "result": {
+              "status": "passed",
+              "duration": 243000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 43,
+            "name": "El usuario hace click en el boton Cadastrar",
+            "result": {
+              "status": "passed",
+              "duration": 82000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 44,
+            "name": "El usuario deber ver el error \"Por favor, insira um e-mail válido\"",
+            "result": {
+              "status": "passed",
+              "duration": 5000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "02-cadastro-de-usuarios;si-el-campo-senha-esta-incorrecto",
+        "keyword": "Scenario",
+        "line": 46,
+        "name": "Si el campo Senha esta incorrecto",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "El usuario abre el sitio cadastro de usuarios",
+            "result": {
+              "status": "passed",
+              "duration": 287000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 47,
+            "name": "El usuario ingresa Nome \"Juan Perez\"",
+            "result": {
+              "status": "passed",
+              "duration": 273000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 48,
+            "name": "El usuario ingresa E-mail \"test@test.com\"",
+            "result": {
+              "status": "passed",
+              "duration": 285000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 49,
+            "name": "El usuario ingresa una Senha \"1234567\"",
+            "result": {
+              "status": "passed",
+              "duration": 217000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 50,
+            "name": "El usuario hace click en el boton Cadastrar",
+            "result": {
+              "status": "passed",
+              "duration": 83000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 51,
+            "name": "El usuario deber ver el error \"A senha deve conter ao menos 8 caracteres\"",
+            "result": {
+              "status": "passed",
+              "duration": 6000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
