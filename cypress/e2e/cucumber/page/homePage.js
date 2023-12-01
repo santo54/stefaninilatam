@@ -4,6 +4,8 @@ class homePage {
     usernamesInput: () => cy.get("#name"),
     useremail: () => cy.get("#email"),
     userpassword: () => cy.get("#password"),
+    tableUser: () => cy.get(".table-title"),
+    errorMsg: () => cy.get(".error"),
     loginBtn: () => cy.get("#register"),
     urlSite: () =>
       cy.visit(

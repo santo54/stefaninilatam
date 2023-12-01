@@ -1,7 +1,7 @@
 import { Given, When, And, Then } from "cypress-cucumber-preprocessor/steps";
 import homePage from "../page/homePage";
 
-Given("El usuario abre el sitio cadastro de usuarios", () => {
+Given("El usuario ingresa al sitio cadastro de usuarios", () => {
   homePage.elements.urlSite();
 });
 
@@ -25,14 +25,14 @@ And("El usuario ingresa E-mail {string}", (email) => {
   homePage.typeEmail(email);
 });
 
-And("El usuario deber ver el error {string}", (error) => {
-  cy.get(".error").should("contain", error);
+And("El usuario deberia ver el error {string}", (error) => {
+  homePage.elements.errorMsg().should("contain", error);
 });
 
-Then("El usuario deber ver el error {string}", (error) => {
-  cy.get(".error").should("contain", error);
+Then("El usuario deberia ver el error {string}", (error) => {
+  homePage.elements.errorMsg().should("contain", error);
 });
 
 Then("El usuario no deberia ver la tabla de usuarios", () => {
-  cy.get(".table-title").should("not.exist");
+  homePage.elements.tableUser().should("not.exist");
 });

@@ -1,75 +1,55 @@
 [
   {
     "keyword": "Feature",
-    "name": "01 cadastro de usuarios",
+    "name": "Verificación de elementos en el Formulario de Registro",
     "line": 1,
-    "id": "01-cadastro-de-usuarios",
+    "id": "verificación-de-elementos-en-el-formulario-de-registro",
     "tags": [],
     "uri": "01_cadastro-de-usuarios.feature",
     "elements": [
       {
-        "id": "01-cadastro-de-usuarios;elementos-de-login-del-sitio",
+        "id": "verificación-de-elementos-en-el-formulario-de-registro;visualizar-elementos-del-formulario---tela-1",
         "keyword": "Scenario",
-        "line": 6,
-        "name": "Elementos de login del sitio",
+        "line": 8,
+        "name": "Visualizar elementos del formulario - Tela 1",
         "tags": [],
         "type": "scenario",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 4,
-            "name": "El usuario abre el sitio cadastro de usuarios",
+            "line": 6,
+            "name": "El usuario ingresa al sitio cadastro de usuarios",
             "result": {
               "status": "passed",
-              "duration": 1639000000
+              "duration": 972000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 7,
-            "name": "El usuario entra al sitio",
-            "result": {
-              "status": "passed",
-              "duration": 9000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 8,
-            "name": "El usuario deberia ver el elemento, campo Nome",
-            "result": {
-              "status": "passed",
-              "duration": 9000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
             "line": 9,
-            "name": "El usuario deberia ver el elemento, campo E-mail",
+            "name": "El usuario accede al sitio",
             "result": {
               "status": "passed",
-              "duration": 8000000
+              "duration": 9000000
             }
           },
           {
             "arguments": [],
-            "keyword": "And ",
+            "keyword": "Then ",
             "line": 10,
-            "name": "El usuario deberia ver el elemento, campo Senha",
+            "name": "El usuario no deberia ver la tabla de usuarios",
             "result": {
               "status": "passed",
-              "duration": 9000000
+              "duration": 5000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 11,
-            "name": "El usuario deberia ver el elemento, boton Cadastrar",
+            "name": "El usuario deberia ver el campo Nome con valor inicial vacio",
             "result": {
               "status": "passed",
               "duration": 8000000
@@ -77,12 +57,32 @@
           },
           {
             "arguments": [],
-            "keyword": "Then ",
+            "keyword": "And ",
             "line": 12,
-            "name": "El usuario no deberia la tabla de usuarios",
+            "name": "El usuario deberia ver el campo E-mail con valor inicial vacio",
             "result": {
               "status": "passed",
-              "duration": 6000000
+              "duration": 8000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "El usuario deberia ver el campo Senha con valor inicial vacio",
+            "result": {
+              "status": "passed",
+              "duration": 8000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "El usuario deberia ver el boton Cadastrar",
+            "result": {
+              "status": "passed",
+              "duration": 8000000
             }
           }
         ]

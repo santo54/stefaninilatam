@@ -1,7 +1,7 @@
 import { Given, When, And, Then } from "cypress-cucumber-preprocessor/steps";
 import homePage from "../page/homePage";
 
-Given("El usuario abre el sitio cadastro de usuarios", () => {
+Given("El usuario ingresa al sitio cadastro de usuarios", () => {
   homePage.elements.urlSite();
 });
 
@@ -14,7 +14,7 @@ When("El usuario ingresa los datos en el formulario", (table) => {
   });
 });
 
-And("El usuario debe ver la opcion de Excluir los datos ingresados", () => {
+And("El usuario deberia ver la opcion de Excluir los datos ingresados", () => {
   cy.get("table > tr")
     .should("have.length.greaterThan", 0)
     .each(($filaUsuario) => {
@@ -23,7 +23,7 @@ And("El usuario debe ver la opcion de Excluir los datos ingresados", () => {
 });
 
 And(
-  "El usuario debe ver a los nuevos usuarios ordenados por identificación, de menor a mayor",
+  "El usuario deberia ver a los nuevos usuarios ordenados por identificación, de menor a mayor",
   () => {
     cy.get('[id^="tdUserId"]').then(($identificaciones) => {
       const identificaciones = $identificaciones
@@ -42,14 +42,14 @@ And("El usuario borra unos de los usuarios clickando en boton Excluir", () => {
 });
 
 Then(
-  "El usuario debe ver un formulario con una tabla con los datos del usuario previamente ingresado",
+  "El usuario deberia ver un formulario con una tabla con los datos del usuario previamente ingresado",
   () => {
-    cy.get(".table-title").should("be.visible");
+    homePage.elements.tableUser().should("be.visible");
   }
 );
 
 Then(
-  "El usuario debe ver una tabla con los datos del usuario previamente ingresado y no ver el eliminado",
+  "El usuario deberia ver una tabla con los datos del usuario previamente ingresado y no ver el eliminado",
   () => {
     cy.get("#tdUserId1").should("not.exist");
     cy.get("#tdUserId2").should("have.text", "2");

@@ -1,15 +1,18 @@
-Feature: 01 cadastro de usuarios
-  
-  Background: 
-  Given El usuario abre el sitio cadastro de usuarios
+Feature: Verificación de elementos en el Formulario de Registro 
 
-  Scenario: Elementos de login del sitio
-  When El usuario entra al sitio
-  And El usuario deberia ver el elemento, campo Nome
-  And El usuario deberia ver el elemento, campo E-mail
-  And El usuario deberia ver el elemento, campo Senha
-  And El usuario deberia ver el elemento, boton Cadastrar
-  Then El usuario no deberia la tabla de usuarios
+# language: pt
+
+  Background: 
+  Given El usuario ingresa al sitio cadastro de usuarios
+
+  Scenario: Visualizar elementos del formulario - Tela 1
+  When El usuario accede al sitio
+  Then El usuario no deberia ver la tabla de usuarios
+  And El usuario deberia ver el campo Nome con valor inicial vacio
+  And El usuario deberia ver el campo E-mail con valor inicial vacio
+  And El usuario deberia ver el campo Senha con valor inicial vacio
+  And El usuario deberia ver el boton Cadastrar
+  
 
  
 

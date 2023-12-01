@@ -1,28 +1,28 @@
 [
   {
     "keyword": "Feature",
-    "name": "03 cadastro de usuarios",
+    "name": "Gestión de Usuarios en el Sistema",
     "line": 1,
-    "id": "03-cadastro-de-usuarios",
+    "id": "gestión-de-usuarios-en-el-sistema",
     "tags": [],
     "uri": "03_cadastro-de-usuarios.feature",
     "elements": [
       {
-        "id": "03-cadastro-de-usuarios;registrar-usuarios-con-datos-válidos",
+        "id": "gestión-de-usuarios-en-el-sistema;registrar-elementos-con-datos-válidos---tela-9,-10",
         "keyword": "Scenario",
-        "line": 6,
-        "name": "Registrar usuarios con datos válidos",
+        "line": 8,
+        "name": "Registrar elementos con datos válidos - Tela 9, 10",
         "tags": [],
         "type": "scenario",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 4,
-            "name": "El usuario abre el sitio cadastro de usuarios",
+            "line": 6,
+            "name": "El usuario ingresa al sitio cadastro de usuarios",
             "result": {
               "status": "passed",
-              "duration": 270000000
+              "duration": 257000000
             }
           },
           {
@@ -54,93 +54,7 @@
               }
             ],
             "keyword": "When ",
-            "line": 7,
-            "name": "El usuario ingresa los datos en el formulario",
-            "result": {
-              "status": "passed",
-              "duration": 2093000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 11,
-            "name": "El usuario debe ver la opcion de Excluir los datos ingresados",
-            "result": {
-              "status": "passed",
-              "duration": 19000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 12,
-            "name": "El usuario debe ver a los nuevos usuarios ordenados por identificación, de menor a mayor",
-            "result": {
-              "status": "passed",
-              "duration": 4000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 13,
-            "name": "El usuario debe ver un formulario con una tabla con los datos del usuario previamente ingresado",
-            "result": {
-              "status": "passed",
-              "duration": 4000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "03-cadastro-de-usuarios;borrar-usuario-un-usuario",
-        "keyword": "Scenario",
-        "line": 15,
-        "name": "Borrar usuario un usuario",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 4,
-            "name": "El usuario abre el sitio cadastro de usuarios",
-            "result": {
-              "status": "passed",
-              "duration": 308000000
-            }
-          },
-          {
-            "arguments": [
-              {
-                "rows": [
-                  {
-                    "cells": [
-                      "Nome",
-                      "Email",
-                      "Senha"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Joao Silva",
-                      "email@exemplo.com",
-                      "12345678"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Roberto Carlos da Silva",
-                      "robertinho.carlos@email.com",
-                      "qwertyui"
-                    ]
-                  }
-                ]
-              }
-            ],
-            "keyword": "When ",
-            "line": 16,
+            "line": 9,
             "name": "El usuario ingresa los datos en el formulario",
             "result": {
               "status": "passed",
@@ -149,22 +63,108 @@
           },
           {
             "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "El usuario deberia ver un formulario con una tabla con los datos del usuario previamente ingresado",
+            "result": {
+              "status": "passed",
+              "duration": 4000000
+            }
+          },
+          {
+            "arguments": [],
             "keyword": "And ",
-            "line": 20,
+            "line": 14,
+            "name": "El usuario deberia ver la opcion de Excluir los datos ingresados",
+            "result": {
+              "status": "passed",
+              "duration": 12000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "El usuario deberia ver a los nuevos usuarios ordenados por identificación, de menor a mayor",
+            "result": {
+              "status": "passed",
+              "duration": 5000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "gestión-de-usuarios-en-el-sistema;borrar-un-elemento-existente---tela-11",
+        "keyword": "Scenario",
+        "line": 18,
+        "name": "Borrar un elemento existente - Tela 11",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "El usuario ingresa al sitio cadastro de usuarios",
+            "result": {
+              "status": "passed",
+              "duration": 287000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Nome",
+                      "Email",
+                      "Senha"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Joao Silva",
+                      "email@exemplo.com",
+                      "12345678"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Roberto Carlos da Silva",
+                      "robertinho.carlos@email.com",
+                      "qwertyui"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 19,
+            "name": "El usuario ingresa los datos en el formulario",
+            "result": {
+              "status": "passed",
+              "duration": 2055000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 23,
             "name": "El usuario borra unos de los usuarios clickando en boton Excluir",
             "result": {
               "status": "passed",
-              "duration": 83000000
+              "duration": 94000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 21,
-            "name": "El usuario debe ver una tabla con los datos del usuario previamente ingresado y no ver el eliminado",
+            "line": 24,
+            "name": "El usuario deberia ver una tabla con los datos del usuario previamente ingresado y no ver el eliminado",
             "result": {
               "status": "passed",
-              "duration": 7000000
+              "duration": 6000000
             }
           }
         ]
